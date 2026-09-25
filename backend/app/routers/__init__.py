@@ -6,6 +6,7 @@
 """
 from __future__ import annotations
 
+from app.routers import session as router_session
 from app.routers import berth as router_berth
 from app.routers import vessel as router_vessel
 from app.routers import voyage as router_voyage
@@ -25,4 +26,4 @@ from app.routers import safety as router_safety
 from app.routers import customer as router_customer
 from app.routers import settle as router_settle
 
-ROUTERS = [router_berth, router_vessel, router_voyage, router_crane, router_loading, router_yard, router_container, router_yardstore, router_gate, router_truck, router_tally, router_damage, router_manifest, router_storage, router_pilot, router_safety, router_customer, router_settle]
+ROUTERS = [router_session, router_berth, router_vessel, router_voyage, router_crane, router_loading, router_yard, router_container, router_yardstore, router_gate, router_truck, router_tally, router_damage, router_manifest, router_storage, router_pilot, router_safety, router_customer, router_settle]
